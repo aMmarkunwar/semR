@@ -13,7 +13,14 @@ var semesterSessions = {
 
 function loadAllCSVFiles() {
   var csvURLs = [
-    "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester1_results.csv?token=GHSAT0AAAAAACSLOZJURNGDPLO322XP266MZSFUGWA"
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester1_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester2_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester3_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester4_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester5_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester6_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester7_results.csv",
+  "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester8_results.csv"
   ];
 
   Promise.all(csvURLs.map(fetchAndParseCSV))
