@@ -12,7 +12,9 @@ var semesterSessions = {
 };
 
 function loadAllCSVFiles() {
-  var csvURLs = [];
+  var csvURLs = [
+    "https://raw.githubusercontent.com/aMmarkunwar/semR/main/semester1_results.csv?token=GHSAT0AAAAAACSLOZJURNGDPLO322XP266MZSFUGWA"
+  ];
 
   Promise.all(csvURLs.map(fetchAndParseCSV))
     .then(function (results) {
