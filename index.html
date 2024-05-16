@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>onAir-Sem</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="webpage">
+      <div class="container">
+        <h2>BASELINE_RESULT</h2>
+        <div class="rounded-box">
+          <div class="input-container">
+            <label for="searchInput">Enter Roll Number:</label>
+            <input type="number" id="searchInput" placeholder="Roll Number" />
+          </div>
+          <button onclick="searchAndDisplay()">Search</button>
+        </div>
+
+        <!-- Add space and a paragraph below the search button -->
+        <div class="additional-content">
+          <p></p>
+        </div>
+
+        <div id="tableContainer" class="result-table hidden">
+          <!-- Tables will be dynamically added here -->
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("searchInput")
+        .addEventListener("keyup", function (event) {
+          if (event.keyCode === 13) {
+            document.querySelector("button").click();
+          }
+        });
+    </script>
+  </body>
+</html>

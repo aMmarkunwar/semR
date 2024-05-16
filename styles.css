@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.rounded-box {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.input-container {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+
+.result-table {
+  margin-top: 20px;
+}
+
+.result-table table {
+  width: 100%;
+  border-collapse: 0;
+}
+.result-table th,
+.result-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.result-table th {
+  background-color: #f2f2f2;
+}
+
+.result-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.result-table td {
+  padding: 8px;
+  word-wrap: break-word;
+  max-width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.webpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  position: relative;
+  margin: auto;
+  min-height: 100vh;
+}
+
+.semester-box {
+  margin-bottom: 30px;
+}
